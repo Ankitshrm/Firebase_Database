@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DatabaseDemo</string>
+    <string name="title_activity_sign_in">SignIn</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str1">Ask Question, connect with the collage friends.Access notes,paper lecture of batch subject.</string>
+    <string name="text_verify_num">Please enter your phone number to \n receive a verification code.</string>
+    <string name="enter_the_valid_otp_code">Enter the valid OTP code.</string>
+</resources>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FF4207"
+    android:layout_height="match_parent"
+    tools:context=".SignIn">
+
+
+    <FrameLayout
+        android:id="@+id/background_signUp"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_shaped_bg"
+
+        >
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/text_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:layout_above="@+id/background_signUp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="45dp"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+
+        >
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_detail1_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the following details to sign in"
+        android:layout_below="@+id/text_signin"
+        android:layout_marginTop="65dp"
+        android:textColor="#332D2D"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        android:textSize="19dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/email_signin"
+        android:layout_width="300dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/email"
+        android:layout_height="40dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="15dp"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="Email"
+        android:layout_below="@+id/text_detail1_signin"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/password_signin"
+        android:layout_width="300dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="15dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittext_bg"
+        android:drawableLeft="@drawable/password_vector"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:hint="Password"
+        android:layout_below="@+id/email_signin"
+        >
+    </EditText>
+
+    <TextView
+        android:id="@+id/btn_signin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Sign In"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+
+        android:background="@drawable/btn_signin"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:layout_below="@id/password_signin"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/white"
+        android:gravity="center">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/text_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:layout_below="@id/btn_signin"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        >
+    </TextView>
+
+
+
+
+    <TextView
+        android:id="@+id/btn_fb"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Sign-in with Facebook"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_f_icon"
+        android:background="@drawable/auth_bg"
+        android:layout_marginTop="35dp"
+        android:textAlignment="center"
+        android:layout_below="@id/text_or"
+        android:textColor="@android:color/white"
+        android:drawablePadding="10dp"
+        android:paddingLeft="25dp"
+        >
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/btn_google"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Sign-in with google"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_g_logo"
+        android:background="@drawable/auth_bg"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:layout_below="@id/btn_fb"
+        android:textColor="@android:color/white"
+
+        android:drawablePadding="10dp"
+        android:paddingLeft="25dp"
+        >
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/btn_phone"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Sign-in with Phone"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_phone"
+        android:background="@drawable/auth_bg"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/btn_google"
+        android:textColor="@android:color/white"
+        android:drawablePadding="10dp"
+        android:paddingLeft="25dp"
+        >
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/signin_2_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_phone"
+        >
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/text_notregis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Registered ?"
+            android:layout_marginTop="15dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:layout_below="@id/btn_phone"
+            android:textColor="#F60505"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/text_notregis"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/text_notregis">
+        </TextView>
+    </LinearLayout>
+</RelativeLayout>

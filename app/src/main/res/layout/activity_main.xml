@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/technocrate_bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="300dp"
+            app:cardBackgroundColor="#0F111B"
+            android:id="@+id/card_name"
+            android:layout_marginTop="25dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="5dp"
+            android:layout_gravity="center_horizontal"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello"
+                    android:textSize="30dp"
+                    android:textColor="#C6C2C2"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="normal"
+
+
+                >
+            </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ankit Sharma !"
+                    android:textSize="30dp"
+                    android:textColor="#C6C2C2"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="normal"
+
+
+                    >
+                </TextView>
+            </LinearLayout>
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/card_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ig"
+                >
+            </ImageView>
+            <TextView
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+
+                android:layout_height="wrap_content"
+                android:text="who_ankitsharma "
+                android:textSize="20dp"
+                android:textColor="#C6C2C2"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="normal"
+
+
+                >
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/linkedin"
+                >
+            </ImageView>
+            <TextView
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="ankit-sharma-6101001a6 "
+                android:textSize="20dp"
+                android:textColor="#C6C2C2"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="normal"
+
+
+                >
+            </TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/fb"
+                >
+            </ImageView>
+            <TextView
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="ankit.sharma.5264"
+                android:textSize="20dp"
+                android:textColor="#C6C2C2"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="normal"
+
+
+                >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/gh"
+                >
+            </ImageView>
+            <TextView
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Ankitshrm "
+                android:textSize="20dp"
+                android:textColor="#C6C2C2"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="normal"
+
+
+                >
+            </TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/signout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="45dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_height="50dp"
+        android:text="Signout"
+        android:gravity="center"
+        android:background="@drawable/signin_bg"
+         />
+</RelativeLayout>

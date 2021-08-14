@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "123407175051",
+    "project_id": "databasedemo-ca1c2",
+    "storage_bucket": "databasedemo-ca1c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123407175051:android:6e9303844487902a3a738e",
+        "android_client_info": {
+          "package_name": "com.insidecoderz.databasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123407175051-n16csq88d5slqiokqltra7bo058lu4nd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.insidecoderz.databasedemo",
+            "certificate_hash": "18ede78bb1a27539074ab9c3dd9e0fff3f5e46aa"
+          }
+        },
+        {
+          "client_id": "123407175051-r0rglo5ondkehe0asj3avrnpfl88uinf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCnViiZvoQG3QGnzg85KzRs3vJlN4cRKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123407175051-r0rglo5ondkehe0asj3avrnpfl88uinf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

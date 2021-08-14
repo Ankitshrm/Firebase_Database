@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDCFCF"
+    tools:context=".UserDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="User Details"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:backgroundTint="@color/black"
+                android:padding="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textSize="30dp">
+
+            </TextView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_margin="2dp"
+                >
+            </View>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:gravity="center_horizontal"
+                >
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/name_userdeatils"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"
+                android:text="Ankit Sharma"
+
+
+                >
+            </TextView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_margin="2dp"
+                >
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="4dp"
+                >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_role"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="5dp"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="I'm a Student"
+                        android:layout_weight="1"
+
+                        >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="I'm a Faculty"
+                        android:layout_weight="1"
+                        >
+                    </RadioButton>
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty profile will be verified by our TBI_GEU team"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    >
+                </TextView>
+
+            </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_margin="2dp"
+                >
+            </View>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/choose_college_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose College"
+                android:gravity="center_horizontal"
+                >
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/college"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="18dp"
+                android:onClick="listCollege"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"
+                android:hint="College"
+                >
+            </TextView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_margin="2dp"
+                >
+            </View>
+            <TextView
+                android:id="@+id/choose_course_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Course"
+                android:gravity="center_horizontal"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/course"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="18dp"
+                android:onClick="listCourse"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"
+                android:hint="Course"
+                >
+            </TextView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_margin="2dp"
+                >
+            </View>
+
+            <TextView
+                android:id="@+id/choose_branch_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Branch"
+                android:gravity="center_horizontal"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/branch"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="18dp"
+                android:onClick="listBranch"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"
+                android:hint="Branch"
+                >
+            </TextView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_margin="2dp"
+                >
+            </View>
+
+
+
+            <TextView
+                android:id="@+id/choose_sem_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Semester"
+                android:gravity="center_horizontal"
+                >
+            </TextView>
+            <TextView
+                android:id="@+id/sem"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="18dp"
+                android:onClick="listSemester"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"
+                android:hint="Semester"
+                >
+            </TextView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_margin="2dp"
+                >
+            </View>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Number"
+                android:gravity="center_horizontal"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textColorHint="@android:color/black"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10dp"
+                android:text="9368836747"
+                >
+            </TextView>
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:layout_margin="2dp"
+                >
+            </View>
+
+            <Button
+
+                android:id="@+id/btn_proceed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:backgroundTint="#00FF0A"
+                android:text="Proceed"
+                >
+            </Button>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
